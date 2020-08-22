@@ -19,6 +19,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final _inputItenController = TextEditingController();
+  Color blackModeTop = Colors.blueAccent;
+  Color blackModeall = Colors.white;
+  Color blackModebody = Colors.grey;
   List _toDoList = [];
   Map<String, dynamic> _lastRemoved;
   int _lastRemovedPos;
@@ -62,9 +65,32 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: blackModeall,
       appBar: AppBar(
+        actions: <Widget>[
+          IconButton(
+              icon: const Icon(Icons.check_circle),
+              tooltip: 'black mode',
+              onPressed: () {
+                setState(() {
+                  blackModeTop = Colors.black;
+                  blackModebody = Colors.black;
+                  blackModeall = Colors.blueGrey;
+                });
+              }),
+          IconButton(
+              icon: const Icon(Icons.check_circle_outline),
+              tooltip: 'blue mode',
+              onPressed: () {
+                setState(() {
+                  blackModeall = Colors.white;
+                  blackModeTop = Colors.blue;
+                  blackModebody = Colors.blue;
+                });
+              }),
+        ],
         title: Text("- Lista de Tarefas -"),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: blackModeTop,
         centerTitle: true,
       ),
       body: Column(
@@ -77,13 +103,13 @@ class _HomeState extends State<Home> {
                   child: TextField(
                     decoration: InputDecoration(
                         labelText: "Nova Tarefa",
-                        labelStyle: TextStyle(
-                            color: Colors.blueAccent, fontSize: 15.0)),
+                        labelStyle:
+                            TextStyle(color: blackModebody, fontSize: 15.0)),
                     controller: _inputItenController,
                   ),
                 ),
                 RaisedButton(
-                  color: Colors.blueAccent,
+                  color: blackModebody,
                   child: Text("ADD"),
                   textColor: Colors.white,
                   onPressed: _addToDo,
@@ -144,8 +170,11 @@ class _HomeState extends State<Home> {
         title: Text(_toDoList[index]["title"]),
         value: _toDoList[index]["ok"],
         secondary: CircleAvatar(
-          child:
-              Icon(_toDoList[index]["ok"] ? Icons.check_circle : Icons.error),
+          backgroundColor: blackModeTop,
+          child: Icon(
+            _toDoList[index]["ok"] ? Icons.check_circle : Icons.error,
+            color: Colors.white,
+          ),
         ),
         onChanged: (onPressCheck) {
           setState(() {

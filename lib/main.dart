@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
   final _inputItenController = TextEditingController();
   Color blackModeTop = Colors.blueAccent;
   Color blackModeall = Colors.white;
-  Color blackModebody = Colors.grey;
+  Color blackModebody = Colors.blue;
   List _toDoList = [];
   Map<String, dynamic> _lastRemoved;
   int _lastRemovedPos;
@@ -89,9 +89,12 @@ class _HomeState extends State<Home> {
                 });
               }),
         ],
-        title: Text("- Lista de Tarefas -"),
+        title: Text(
+          "Lista de Tarefas            Modes:",
+          style: TextStyle(fontSize: 20.0),
+        ),
         backgroundColor: blackModeTop,
-        centerTitle: true,
+        centerTitle: false,
       ),
       body: Column(
         children: <Widget>[

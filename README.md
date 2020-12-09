@@ -14,11 +14,11 @@ Sistema de Gerenciamento e Cadastro de Tarefas em Flutter
 <br>
 
 ## Criação de Novas Tarefas & Indicação de Tarefa Concluida & Deleção de Tarefas Concluidas.
-<hr>
+
 ![image](https://user-images.githubusercontent.com/46682639/101686404-c4932a00-3a47-11eb-80d8-04b592e9ece6.png)
 ![image](https://user-images.githubusercontent.com/46682639/101686022-420a6a80-3a47-11eb-847c-45b88317f1b9.png)
 ![image](https://user-images.githubusercontent.com/46682639/101686184-78e08080-3a47-11eb-9563-9943184b06f6.png)
-<hr>
+
 
 This project is a starting point for a Flutter application.
 

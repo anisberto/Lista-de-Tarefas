@@ -13,11 +13,9 @@ Sistema de Gerenciamento e Cadastro de Tarefas em Flutter
 </p>
 <br>
 
-## Criação de Novas Tarefas.
+## Criação de Novas Tarefas & Indicação de Tarefa Concluida & Deleção de Tarefas Concluidas.
 ![image](https://user-images.githubusercontent.com/46682639/101685950-269f5f80-3a47-11eb-995f-60cf74e0aa8c.png)
-## Indicação de Tarefa Concluida.
 ![image](https://user-images.githubusercontent.com/46682639/101686022-420a6a80-3a47-11eb-847c-45b88317f1b9.png)
-## Deleção de Tarefas Concluidas.
 ![image](https://user-images.githubusercontent.com/46682639/101686184-78e08080-3a47-11eb-9563-9943184b06f6.png)
 
 

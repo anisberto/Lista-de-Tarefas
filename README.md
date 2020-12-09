@@ -1,7 +1,21 @@
-# lista_de_tarefas
+<h1 align="center">
+    < 🎓 > <br>
+  Gerenciador de Tarefas
+</h1>
+<h4 align="center">
+Sistema de Gerenciamento e Cadastro de Tarefas em Flutter
+</h4>
 
+<p align="center">
+  <a href="https://github.com/anisberto">
+    <img alt="Anisberto Reis" src="https://img.shields.io/badge/Anisberto Reis-Dev-blue">
+  </a>
+</p>
+<br>
 
-## Getting Started
+## Criação de Novas Tarefas.
+## Indicação de Tarefa Concluida.
+## Deleção de Tarefas Concluidas.
 
 This project is a starting point for a Flutter application.
 
